@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <AnchorPane prefHeight="400.0" prefWidth="600.0">
+         <children>
+            <Button fx:id="btn_edit" layoutX="350.0" layoutY="150.0" mnemonicParsing="false" prefHeight="27.0" prefWidth="211.0" text="Editar utilizador selecionado" />
+            <Button id="btn_addpacient" fx:id="btn_addpacient" layoutX="350.0" layoutY="30.0" mnemonicParsing="false" prefWidth="211.0" text="Adicionar paciente" />
+            <Button id="btn_logout" fx:id="btn_logout" layoutX="531.0" layoutY="370.0" mnemonicParsing="false" styleClass="xxs" text="Logout" />
+            <Button id="btn_addfunc" fx:id="btn_addfunc" layoutX="350.0" layoutY="90.0" mnemonicParsing="false" prefWidth="211.0" text="Adicionar funcinário" />
+            <ListView fx:id="listview_admin_users" layoutX="9.0" layoutY="53.0" prefHeight="336.0" prefWidth="283.0" />
+            <Label layoutX="10.0" layoutY="14.0" text="Lista de utilizadores">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Label>
+            <Separator layoutX="298.0" orientation="VERTICAL" prefHeight="400.0" prefWidth="10.0" />
+            <ImageView fx:id="imgbtn_refresh" fitHeight="24.0" fitWidth="24.0" layoutX="268.0" layoutY="15.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../img/refresh.png" />
+               </image>
+            </ImageView>
+            <Separator layoutX="303.0" layoutY="360.0" prefHeight="3.0" prefWidth="296.0" />
+            <ImageView fx:id="img_admin" fitHeight="23.0" fitWidth="23.0" layoutX="308.0" layoutY="371.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../img/account-circle.png" />
+               </image>
+            </ImageView>
+            <Label fx:id="lbl_nif" layoutX="333.0" layoutY="374.0" text="Label" />
+            <Button fx:id="btn_logs" layoutX="350.0" layoutY="270.0" mnemonicParsing="false" prefHeight="27.0" prefWidth="211.0" text="Logs do sistema" />
+            <Button fx:id="btn_recuperarpass" layoutX="350.0" layoutY="210.0" mnemonicParsing="false" prefHeight="27.0" prefWidth="211.0" text="Recuperar password" />
+         </children>
+      </AnchorPane>
+   </children>
+</VBox>

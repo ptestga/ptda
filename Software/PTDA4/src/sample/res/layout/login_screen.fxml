@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox maxHeight="400.0" maxWidth="400.0" minWidth="400.0" prefHeight="320.0" prefWidth="400.0" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.LoginController">
+   <children>
+      <AnchorPane prefHeight="422.0" prefWidth="600.0">
+         <children>
+            <TextField fx:id="nif_input" layoutX="124.0" layoutY="153.0" promptText="NIF" />
+            <PasswordField fx:id="password_input" layoutX="124.0" layoutY="200.0" promptText="Password" />
+            <Button id="btn_login" fx:id="btn_login" layoutX="234.0" layoutY="258.0" mnemonicParsing="false" text="Login" />
+            <Button fx:id="btn_sair" layoutX="99.0" layoutY="258.0" mnemonicParsing="false" text="Sair" />
+            <ImageView fitHeight="20.0" fitWidth="20.0" layoutX="99.0" layoutY="157.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../img/account.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="20.0" fitWidth="20.0" layoutX="99.0" layoutY="204.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../img/lock.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="100.0" fitWidth="100.0" layoutX="150.0" layoutY="30.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../img/cardiogramBig.png" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+   </children>
+   <cursor>
+      <Cursor fx:constant="DEFAULT" />
+   </cursor>
+</VBox>

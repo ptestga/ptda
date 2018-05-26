@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.String?>
+<?import javafx.collections.FXCollections?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="680.0"
+      prefWidth="400.0" stylesheets="@../../bootstrap3.css" xmlns="http://javafx.com/javafx/8.0.141"
+      xmlns:fx="http://javafx.com/fxml/1">
+   <AnchorPane prefHeight="680.0" prefWidth="400.0">
+      <Label layoutX="37.0" layoutY="23.0" text="Nome"/>
+      <Label layoutX="37.0" layoutY="63.0" text="Sexo"/>
+      <Label layoutX="37.0" layoutY="103.0" text="Data de nascimento"/>
+      <Label layoutX="37.0" layoutY="143.0" text="Nacionalidade"/>
+      <Label layoutX="37.0" layoutY="183.0" text="Rua"/>
+      <Label layoutX="37.0" layoutY="263.0" text="Localidade"/>
+      <Label layoutX="37.0" layoutY="343.0" text="Cartão do cidadão"/>
+      <Label layoutX="37.0" layoutY="383.0" text="Telemóvel"/>
+      <TextField fx:id="input_nome" layoutX="200.0" layoutY="18.0" prefHeight="27.0" prefWidth="167.0"/>
+      <ComboBox fx:id="combo_sexo" layoutX="200.0" layoutY="58.0" prefHeight="27.0" prefWidth="167.0">
+      <items>
+         <FXCollections fx:factory="observableArrayList">
+            <String fx:value="Feminino"/>
+            <String fx:value="Masculino"/>
+         </FXCollections>
+      </items>
+      </ComboBox>
+      <DatePicker id="datePicker" fx:id="datePicker" layoutX="200.0" layoutY="98.0" prefHeight="27.0"
+                  prefWidth="167.0"/>
+      <TextField fx:id="input_nacionalidade" layoutX="200.0" layoutY="138.0"/>
+      <TextField fx:id="input_rua" layoutX="200.0" layoutY="178.0"/>
+      <TextField fx:id="input_codpostal" layoutX="200.0" layoutY="218.0"/>
+      <TextField fx:id="input_localidade" layoutX="200.0" layoutY="258.0"/>
+      <TextField fx:id="input_nif" layoutX="200.0" layoutY="297.0"/>
+      <TextField fx:id="input_cc" layoutX="200.0" layoutY="338.0"/>
+      <TextField fx:id="input_tele" layoutX="200.0" layoutY="378.0"/>
+      <TextField fx:id="input_email" layoutX="201.0" layoutY="418.0"/>
+      <DatePicker fx:id="date_admissao" layoutX="200.0" layoutY="483.0" prefWidth="169.0"/>
+      <ComboBox fx:id="combo_funcao" layoutX="201.0" layoutY="523.0" prefWidth="167.0">
+         <items>
+            <FXCollections fx:factory="observableArrayList">
+               <String fx:value="Médico"/>
+               <String fx:value="Fisioterapeuta"/>
+            </FXCollections>
+         </items>
+      </ComboBox>
+      <Label layoutX="37.0" layoutY="568.0" text="Password"/>
+      <PasswordField fx:id="input_pass" layoutX="201.0" layoutY="563.0"/>
+      <Button fx:id="btn_addfunc" layoutX="200.0" layoutY="628.0" mnemonicParsing="false" text="Guardar"/>
+      <Button id="btn_cancel" fx:id="btn_cancel" layoutX="288.0" layoutY="628.0" mnemonicParsing="false"
+              text="Cancelar"/>
+      <Label layoutX="37.0" layoutY="223.0" text="Código Postal"/>
+      <Separator layoutX="15.0" layoutY="460.0" prefWidth="370.0"/>
+      <Label layoutX="37.0" layoutY="528.0" text="Função"/>
+      <Label layoutX="37.0" layoutY="423.0" text="Email"/>
+      <Label layoutX="37.0" layoutY="303.0" text="NIF"/>
+      <Label layoutX="37.0" layoutY="490.0" text="Data de admissão"/>
+   </AnchorPane>
+</VBox>

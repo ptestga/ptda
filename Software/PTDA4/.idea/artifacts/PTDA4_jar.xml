@@ -1,0 +1,12 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="PTDA4:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/PTDA4_jar</output-path>
+    <root id="archive" name="PTDA4.jar">
+      <element id="module-output" name="PTDA4" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/src/sample/libs/TrayNotification.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/src/sample/libs/postgresql-42.1.4.jar" path-in-jar="/" />
+      <element id="library" level="project" name="postgresql-42.1.4" />
+      <element id="library" level="project" name="TrayNotification" />
+    </root>
+  </artifact>
+</component>
